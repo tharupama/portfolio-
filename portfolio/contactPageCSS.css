@@ -1,0 +1,167 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h2{
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 2px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+ label{
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color:#2c3e50;
+}
+
+input, textarea, select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    font-size: 1rem;
+    color: #333;
+    
+}
+
+input:hover, textarea:hover, select:hover {
+    transition: border-color 0.3s ease; 
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #3498db;
+    outline: none; 
+}
+
+#submit{
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #2980b9;
+    
+}
+
+/* input[type="radio"], input[type="checkbox"]{
+    display: inline;
+    width: auto;
+    margin-right: 10px;
+} */
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+
+#rl{
+    
+        margin-right: 20px;
+}
+
+#purpose{
+    height: auto ;
+    max-height: 200px;
+}
+
+.df{
+    background-color: #bdc3c7;
+}
+
+.ro{
+    background-color: #ecf0f1;
+}
+
+label, input[text], input[textarea], input[select], input[button]{
+   margin-top: 10px;
+    
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%; /* Set width to 90% for smaller screens */
+    }
+}
+
+/* Assign unique colors to labels for each field */
+label[for="name"] {
+    color: #3498db; /* Blue */
+}
+
+label[for="email"] {
+    color: #e74c3c; /* Red */
+}
+
+label[for="phone"] {
+    color: #f39c12; /* Orange */
+}
+
+label[for="contact_month"] {
+    color: #2ecc71; /* Green */
+}
+
+label[for="contact_week"] {
+    color: #9b59b6; /* Purple */
+}
+
+label[for="appointment_datetime"] {
+    color: #1abc9c; /* Teal */
+}
+
+label[for="profile_picture"] {
+    color: #34495e; /* Dark Gray */
+}
+
+label[for="resume"] {
+    color: #d35400; /* Orange */
+}
+
+label[for="color_preference"] {
+    color: #8e44ad; /* Purple */
+}
+
+label[for="message"] {
+    color: #2c3e50; /* Dark Blue */
+}
+
+label[for="purpose"] {
+    color: #c0392b; /* Red */
+}
+
+label[for="terms"] {
+    color: #27ae60; /* Green */
+}
